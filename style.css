@@ -1,0 +1,139 @@
+:root {
+    --inter-font: 'Inter', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+/**/
+.main {
+    display: flex;
+}
+.section {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+.section h1 {
+    width: calc(100vw - 333px);
+    height: max-content;
+    font-size: 58px;
+    font-family: var(--inter-font);
+    font-weight: bold;
+}
+/**/
+.nav {
+    width: 333px;
+    height: max-content;
+    background-color: #160D27;
+    
+}
+.logo {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+.logo .img img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+}
+.logo .name-logo {
+    display: flex;
+    align-items: left;
+    padding-left: 14px;
+    justify-content: center;
+    flex-direction: column;
+}
+.logo .name-logo h3 {
+    color: white;
+    font-size: 28px;
+    font-weight: 600;
+    font-family: var(--inter-font);
+}
+.logo .name-logo h5 {
+    color: white;
+    font-size: 17px;
+    margin-top: 10px;
+    font-weight: 600;
+    font-family: var(--inter-font);
+}
+/**/
+.nav-item {
+    width: max-content;
+    height: max-content;
+    margin-left: 50px;
+    margin-top: 18px;
+}
+.nav-item h5 {
+    color: #6ea8fe;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: var(--inter-font);
+    margin-bottom: 1.5px;
+}
+.item-navitem {
+    display: flex;
+    text-align: center;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 4px;
+}
+.item-navitem img {
+    height: 32px;
+    width: 32px;
+    margin-right: 9px;
+}
+.item-navitem p {
+    cursor: pointer;
+    font-family: var(--inter-font);
+    font-size: 16px;
+    color: white;
+}
+.nav-msg {
+    margin-left: 7px;
+    padding: 6px;
+    border-radius: 5px;
+}
+.nav-msg p {
+    font-size: 13px;
+    font-family: var(--inter-font);
+}
+.account {
+    padding: 10px;
+    margin-top: 150px;
+    display: flex;
+    border-top: 2px solid white;
+}
+.account .img {
+    border: 1px solid white;
+    border-radius: 50px;
+    display: flex;
+    text-align: center;
+}
+.account .img img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+}
+.details {
+    display: flex;
+    width: 100%;
+    margin-left: 10px;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+.details h4 {
+    color: white;
+    font-family: var(--inter-font);
+    font-size: 24px;
+    font-weight: bolder;
+}
+.details p {
+    color: white;
+    font-family: var(--inter-font);
+    font-size: 16px;
+    margin-top: 3px;
+}
