@@ -4,32 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="login.css">
-    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon">
 </head>
 <body>
-    <div class="main">
-        <div class="left">
-            <div class="title">
-                <h1>Welcome Customer</h1>
-            </div>
-            <div class="form">
+<div class="main">
+    <div class="left">
+        <div class="title">
+            <h1>Welcome Customer</h1>
+        </div>
+        <div class="form">
+            <form action="/login" method="POST" id="loginForm">
                 <div class="item">
                     <label for="name">Username</label>
-                    <input type="text" placeholder="Username" id="name" required>
+                    <input type="text" placeholder="Username" id="name" name="username" required>
                 </div>
                 <div class="item">
                     <label for="password">Password</label>
-                    <input type="password" placeholder="Password" id="password" required>
+                    <input type="password" placeholder="Password" id="password" name="password" required>
                 </div>
                 <div class="login-btn-div">
-                    <button type="button" id="loginBtn">Login</button>
+                    <button type="submit" id="loginBtn">Login</button>
                 </div>
-            </div>
-        </div>
-        <div class="right">
-            <img src="login-image.png">
+            </form>
         </div>
     </div>
+    <div class="right">
+        <img src="/images/login-image.png">
+    </div>
+</div>
 </body>
 </html>
